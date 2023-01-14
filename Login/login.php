@@ -24,6 +24,22 @@ if (isset($_POST["login"])) {
         }
     }
 
+    $result2 = mysqli_query($connect, "SELECT * FROM users WHERE username_login = '$username' AND password = '$password' ");
+    $cek = mysqli_num_rows($result2);
+
+    if ($cek > 0) {
+        global $result2;
+
+        $data = mysqli_fetch_assoc($result2);
+
+        if ($data["level"] === "admin") {
+
+            echo "<script>
+                    window.location.href = '../admin/dashboard/dashboard.php'
+                </script>"; 
+        }
+    }
+
     $error = true;
 }
 
@@ -55,7 +71,7 @@ if (isset($_POST["login"])) {
         <div class="sign-up">
             <span class="form-title">Sign In</span>
             <?php if (isset($error)) : ?>
-                <p class="text-warning">Username atau password salah</p>
+                <p class="text-danger text-center">Username atau password salah</p>
             <?php endif; ?>
             <form action="" method="post">
                 <div class="form-input">

@@ -7,7 +7,8 @@ if(isset($_POST["submit"])) {
     if ( regis($_POST) > 0 ){
         echo
         "<script>
-            alert('User baru berhasil ditambahkan');
+            alert('Akun berhasil terbuat');
+            window.location.href = '../Login/login.php'
         </script>";
     } else {
         echo mysqli_error($connect);
@@ -53,6 +54,11 @@ if(isset($_POST["submit"])) {
                     <span class="bar"></span>
                 </div>
                 <div class="form-input">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" name="email" placeholder="email..." required>
+                    <span class="bar"></span>
+                </div>
+                <div class="form-input">
                     <i class="fa-solid fa-key"></i>
                     <input type="password" name="password" placeholder="Password..." required>
                     <span class="bar"></span>
@@ -63,7 +69,7 @@ if(isset($_POST["submit"])) {
                     <span class="bar"></span>
                 </div>
                 <div class="tombol d-flex justify-content-center align-items-center flex-column">
-                    <a class="text-dark" href="../Login/login.php">Back</a>
+                    <!-- <a class="text-dark" href="../Login/login.php">Back</a> -->
                     <button type="submit" class="form-button" name="submit">Regis</button>
                 </div>
             </form>

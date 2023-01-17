@@ -36,7 +36,7 @@ if (isset($_POST["login"])) {
 
             echo "<script>
                     window.location.href = '../admin/dashboard/dashboard.php'
-                </script>"; 
+                </script>";
         }
     }
 
@@ -70,10 +70,11 @@ if (isset($_POST["login"])) {
 
         <div class="sign-up">
             <span class="form-title">Sign In</span>
-            <?php if (isset($error)) : ?>
-                <p class="text-danger text-center">Username atau password salah</p>
-            <?php endif; ?>
+
             <form action="" method="post">
+                <?php if (isset($error)) : ?>
+                    <p class="text-danger text-center">Username atau password salah</p>
+                <?php endif; ?>
                 <div class="form-input">
                     <i class="fa-solid fa-user"></i>
                     <input type="text" name="username" placeholder="Username" required>

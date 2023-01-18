@@ -101,7 +101,7 @@
                                 <div class="card bg-primary text-white mb-4">
                                     <div class="card-body">Data User</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="data-user.php">View Details</a>
+                                        <a class="small text-white stretched-link" href="../Admin/data-user.php">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -110,7 +110,7 @@
                                 <div class="card bg-warning text-white mb-4">
                                     <div class="card-body">Film</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="film.php">View Details</a>
+                                        <a class="small text-white stretched-link" href="../Admin/film.php">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>

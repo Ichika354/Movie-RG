@@ -16,7 +16,7 @@
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <img src="../assets/images/logo/logo.png" alt="" width="40" height="40">
+            <img src="../assets/images/logo/logo.png" class="ms-3" alt="" width="40" height="40">
             <a class="navbar-brand ps-3" href="index.html">Admin</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
@@ -32,9 +32,9 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#!">My Profile</a></li>
+                        <li><a class="dropdown-item" href="../Admin/profile.php">My Profile</a></li>
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                        <li><a class="dropdown-item" href="../Login/login.php">Logout</a></li>
                     </ul>
                 </li>
             </ul>
@@ -50,7 +50,7 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="dashboard.php">
+                            <a class="nav-link" href="../Admin/dashboard.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
@@ -62,19 +62,18 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="home.php">Home</a>
-                                    <a class="nav-link" href="data-user.php">Data User</a>
-                                    <a class="nav-link" href="film.php">Film</a>
+                                    <a class="nav-link" href="../Admin/data-user.php">Data User</a>
+                                    <a class="nav-link" href="../Admin/film.php">Film</a>
                                 </nav>
                             </div>
                             
                             
                             <div class="sb-sidenav-menu-heading">My Account</div>
-                            <a class="nav-link" href="charts.html">
+                            <a class="nav-link" href="../Admin/profile.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Profile
                             </a>
-                            <a class="nav-link" href="../index.php">
+                            <a class="nav-link" href="../Login/login.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Log out
                             </a>
@@ -83,14 +82,15 @@
                    
                 </nav>
             </div>
-
-
-            
             <!-- sidebar end  -->
+
+
+
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Dashboard</h1>
+                        <h1 class
+                        ="mt-4">Dashboard</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Dashboard</li>
                         </ol>

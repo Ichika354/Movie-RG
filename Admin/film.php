@@ -16,7 +16,8 @@
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.html">Admin</a>
+        <img src="../assets/images/logo/logo.png" class="ms-3" alt="" width="40" height="40">
+        <a class="navbar-brand ps-3" href="#">Admin</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         <!-- Navbar Search-->
@@ -43,18 +44,17 @@
     <!-- Navbar end  -->
 
 
-    <!-- Sidebar  -->
+    <!-- sidebar  -->
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Core</div>
-                        <a class="nav-link" href="dashboard.php">
+                        <a class="nav-link" href="../Admin/dashboard.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
                         </a>
-                        
                         <div class="sb-sidenav-menu-heading">Interface</div>
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
@@ -63,19 +63,18 @@
                         </a>
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="home.php">Home</a>
-                                <a class="nav-link" href="data-user.php">Data User</a>
-                                <a class="nav-link" href="film.php">Film</a>
+                                <a class="nav-link" href="../Admin/data-user.php">Data User</a>
+                                <a class="nav-link" href="../Admin/film.php">Film</a>
                             </nav>
                         </div>
 
 
                         <div class="sb-sidenav-menu-heading">My Account</div>
-                        <a class="nav-link" href="charts.html">
+                        <a class="nav-link" href="../Admin/profile.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Profile
                         </a>
-                        <a class="nav-link" href="../index.php">
+                        <a class="nav-link" href="../Login/login.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                             Log out
                         </a>
@@ -84,13 +83,13 @@
 
             </nav>
         </div>
+        <!-- sidebar end  -->
 
 
-
-        <!-- content  -->
+        <!-- judul  -->
         <div id="layoutSidenav_content">
             <main class="p-4">
-                <div class="container-fluid px-4">
+                <div class="container-fluid px-1">
                     <h1 class="">Film</h1>
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
@@ -98,10 +97,35 @@
                         <li class="breadcrumb-item active">Film</li>
                     </ol>
                 </div>
+        <!-- judul end  -->
+
                 <br>
+                <!-- content  -->
+                <a href="../Admin/create-film.php" type="button" class="btn btn-success">Tambah Film</a> 
+                <hr> 
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../assets/images/anime/Fairy.jpeg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Fairy Tail</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                
+                                <button type="button" class="btn btn-primary">Detail</button>
+                                <a href="../Admin/edit-film.php" class="btn btn-warning text-white">Edit</a>
+                                <button type="button" class="btn btn-danger">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <!-- content end  -->
                 
             </main>
         </div>
+
+
 
 
     </div>

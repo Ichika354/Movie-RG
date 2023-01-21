@@ -18,8 +18,8 @@ if (isset($_POST["login"])) {
             //set session
             //$_SESSION["login"] = true;
             echo "<script>
-                            window.location.href = '../homepage.php'
-                        </script>";
+                    window.location.href = '../homepage.php'
+                  </script>";
             exit;
         }
     }

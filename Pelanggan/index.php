@@ -1,5 +1,5 @@
 <?php 
-    require 'function/function.php';
+    require '../function/function.php';
 
     $movies = query("SELECT * FROM film");
 
@@ -18,7 +18,7 @@
     <title>Movie</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand-lg nav sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand ms-5" href="#">
-                <img src="assets/images/logo/logo.png" width="35" height="29">
+                <img src="../assets/images/logo/logo.png" width="35" height="29">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -67,7 +67,7 @@
             <?php $i = 1; ?>
             <?php foreach($movies as $movie) : ?>
             <div class="card col-sm-6 " style="width: 15rem;">
-                <img src="assets/images/anime/<?= $movie["tumbnail"]; ?>" class="card-img-top" alt="...">
+                <img src="../assets/images/anime/<?= $movie["tumbnail"]; ?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-text"> <?= $i; ?> <?= $movie["judul"]; ?></h5>
                     <p><?= $movie["deskripsi_judul"]; ?></p>
@@ -95,7 +95,7 @@
 
     <footer>
         <div class="kontak">
-            <img src="assets/images/logo/logo.png" alt="">
+            <img src="../assets/images/logo/logo.png" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, maiores.</p>
         </div>
         <div class="list">

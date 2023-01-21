@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto me-5">
                     <li class="nav-item">
-                        <button class="nav-link active btn-nav text-black" onclick="return window.location.href = 'login/login.php';">Sign In</button>
+                        <button class="nav-link active btn text-black" onclick="return window.location.href = 'login/login.php';">Sign In</button>
                     </li>
                 </ul>
             </div>
